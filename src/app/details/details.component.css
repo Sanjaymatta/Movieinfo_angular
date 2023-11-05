@@ -1,0 +1,73 @@
+.icon{
+    height: 50px;
+    width: auto;
+}
+.search_icon{
+    height: 15px;
+    width: auto;
+}
+
+.navbar-brand{
+    color: wheat;
+}
+
+.navbar-brand:hover{
+    color: green;
+}
+.btn btn-primary{
+    color: wheat;
+}
+.card-body{
+      border-radius: 0 0 20px 20px;
+}
+.card{
+    border-radius: 0 0 19px 19px;
+   
+    background-color: #373636;
+}
+
+.btn{
+    color: wheat;
+}
+.Trending{
+   margin-left: 10%;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+button:hover{
+   border-color: wheat;
+}
+.selected-container{
+    border-radius: 5px;
+    background-color: black;
+   
+    margin-top: 5px;
+}
+.showingcast,.showinggener{
+    display: flex;
+}
+.td1{
+    color: green;
+    /* font-family: 'Poppins', sans-serif; */
+   
+}
+.td2{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+ .Animation{
+   
+    bottom: 0;
+    left: 1;
+    right: 0;
+    padding: 10px;
+   
+    font-size: 160px;
+    text-align: center;
+    transition: opacity 2s ease-in-out;
+ 
+ 
+} 

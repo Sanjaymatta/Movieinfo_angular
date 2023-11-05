@@ -1,0 +1,28 @@
+
+<!--  ............................ -->
+    <h3 style="color: red;"class="Trending" >Trending</h3>
+  <div style="background-color: rgb(165, 161, 165);">
+  <div class="head">
+    <div *ngFor="let x of movies "   style="color: wheat;">
+        <div style="background-color: rgb(165, 161, 165);">
+         <div class="container">
+             <div class="row pt-2">
+          <div class="col pt-2">
+           <div class="card" style="width: 18rem;">
+             <img [src]="x.poster" class="card-img-top" alt="..." style="height: 200px;">
+             <div class="card-body" style="background-color: #373636; color: wheat;">
+              <h5 class="card-title" style="color: orangered;">{{x.title}}</h5>
+              <h5 style="color: white;">Plot</h5> <p class="card-text"> {{x.plot}}</p>
+              <a (click)="showdetails(x.title)" class="btn btn-outline"  [routerLink]="['/details',x.title]">View Details</a>
+             </div>
+          </div>
+        </div>
+             </div>
+    </div>
+        </div>
+    </div>
+  </div> 
+</div> 
+<!-- movie --> 
+
+
