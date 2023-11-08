@@ -3,8 +3,8 @@
 <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
         <div class="search">
-        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search"  [(ngModel)]="searchInput">
-        <button class="btn btn-success"  (click)="search()">Search</button>
+        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search"  [(ngModel)]="searchInput" >
+        <button class="btn btn-success"  (click)="search()"  (click)="s1()">Search</button>
     </div>
     </div>
   </nav>
@@ -34,7 +34,9 @@
       </div>
     </div>
 </div>
-
+<div *ngIf="resultMovies.length<=0">
+    <h5  style="opacity: 0;" id="nodata" >No Match Found</h5>
+</div>
 
 
 <div class="container">

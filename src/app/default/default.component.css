@@ -82,3 +82,6 @@ button:hover{
 #nodata:hover span{
    font-weight: bolder;
 }
+#nodata{
+    margin-left: 50%;
+}

@@ -17,9 +17,14 @@ export class DefaultComponent {
   searchInput:string='';
   resultMovies:any[]=[];
   search(){
+    
     this.resultMovies = this.movies.filter(movie => {
       return movie.title.toLowerCase().includes(this.searchInput.toLowerCase());
     });
+  }
+  s1(){
+    const my=document.getElementById('nodata');
+    my?.style.setProperty('opacity','1');
   }
   selectedMovie:any;
   showdetails(moviename:string){
