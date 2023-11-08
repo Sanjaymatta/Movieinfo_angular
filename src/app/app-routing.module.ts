@@ -5,6 +5,7 @@ import { GenersComponent } from './geners/geners.component';
 import { AppComponent } from './app.component';
 import { DetailsComponent } from './details/details.component';
 import { GenermoviesComponent } from './genermovies/genermovies.component';
+import { DefaultComponent } from './default/default.component';
 
 const routes: Routes = [
   {path:"trending",component:TrendingComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path:"details/:title",component:DetailsComponent},
   {path:"",redirectTo:'',pathMatch:'full'},
   { path: 'genermovies/:genre', component: GenermoviesComponent },
-  { path: '', redirectTo: '/genres', pathMatch: 'full' }
+  { path: '', redirectTo: '/genres', pathMatch: 'full' },
+  {path:"",component:DefaultComponent}
 ];
 
 @NgModule({

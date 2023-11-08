@@ -73,3 +73,6 @@ button:hover{
  
  
 } 
+#nodata:hover span{
+   font-weight: bolder;
+}

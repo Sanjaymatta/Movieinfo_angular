@@ -11,6 +11,7 @@ export class SharedService {
       title:"K.G.F 1",
       year:2018,
       rating:8.2,
+      trailerid:"fnGW4iQzVLw",
       Director:"Prashanth Neel",
       type:"Movie",
       stars:"Yash,Srinidhi Shetty",
@@ -32,10 +33,11 @@ export class SharedService {
       title:"RRR",
       year:2022,
       rating:7.8,
+      trailerid:"NgBoMJy386M",
       Director:"Raja Mouli",
       type:"Movie",
       stars:"Jr.N.T.R,Ram Charan",
-      poster:"https://www.filmibeat.com/ph-big/2021/06/rrr_16249644106.jpg",
+      poster:"https://www.themoviedb.org/t/p/original/u0XUBNQWlOvrh0Gd97ARGpIkL0.jpg",
       plot:"A fictitious story about two legendary revolutionaries and their journey away from home before they started fighting for their country in the 1920s.",
       runtime:"3h 7m",
       cast:[
@@ -51,6 +53,7 @@ export class SharedService {
       title:"Kantara",
       year:2022,
       rating:8.2,
+      trailerid:"3L5X46j2t90",
       Director:"Rishab Shetty",
       type:"Movie",
       stars:"Rishab Shetty,Kishore Kumar",
@@ -71,6 +74,7 @@ export class SharedService {
       title:"The Family Man",
       year:2019+"-",
       rating:7.4,
+      trailerid:"NGf_B81Hc2M",
       Director:"Krishna",
       runtime:"10h",
       type:"Web Series",
@@ -88,7 +92,8 @@ export class SharedService {
           "Drama"
         ]
       
-    }
+    },
+    
   ];
 }
 }

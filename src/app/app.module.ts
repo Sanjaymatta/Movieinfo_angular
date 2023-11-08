@@ -8,6 +8,7 @@ import { GenersComponent } from './geners/geners.component';
 import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
 import { GenermoviesComponent } from './genermovies/genermovies.component';
+import { DefaultComponent } from './default/default.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { GenermoviesComponent } from './genermovies/genermovies.component';
     GenersComponent,
     DetailsComponent,
     GenermoviesComponent,
+    DefaultComponent,
     
   ],
   imports: [

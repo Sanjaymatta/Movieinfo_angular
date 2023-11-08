@@ -1,5 +1,5 @@
 import { Component ,OnInit} from '@angular/core';
-import { AppComponent } from '../app.component';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { SharedService } from '../shared.service';
 // implements {ActivatedRoute}
@@ -11,25 +11,28 @@ import { SharedService } from '../shared.service';
 export class DetailsComponent implements OnInit{
   movies:any[]=[];
   movieTitle!: string | null;
+  trailerid!:string | null;
   selectedMovie: any; // Assuming you have a data structure for movie details
 
   
-  constructor(private route: ActivatedRoute,private movieService:SharedService) {
+  constructor(private route: ActivatedRoute,private movieService:SharedService,private sanitizer:DomSanitizer) {
     this.movies=this.movieService.movies;
   }
   
 
   ngOnInit() {
+    
     this.route.paramMap.subscribe(params => {
-      this.movieTitle = params.get('title') ?? null; // Use null as a default if 'title' is not provided
+      this.movieTitle = params.get('title') ?? null; 
       if (this.movieTitle !== null) {
         this.selectedMovie= this.movies.find(movie => movie.title === this.movieTitle);
 
-        // Fetch movie details for the given movieTitle from your data source
-        // Assign the details to this.movieDetails
+        
       }
     });
+    
   }
+  
   
  
  hovered(){

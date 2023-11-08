@@ -1,18 +1,16 @@
 .btn:hover{
- background-color: white;
+ background-color: skyblue;
  border-color: green;
  font-weight: bolder;
 }
 
 .btn{
   color: white;
-  background-color: orangered;
-  
+  background-color: orangered; 
   border-color: wheat;
-  /* padding: 5px; */
   margin: 10px;
-  width: 130px; /* Adjust the width as needed */
-  height: 40px; /* Adjust the height as needed */
+  width: 130px; 
+  height: 40px; 
   
   
 }
@@ -23,7 +21,7 @@ body{
   margin-left: 0;
   align-items: center;
   padding-top: 10px;
-   background-color: rgb(165,161,165);
+   /* background-color: rgb(165,161,165); */
 
 }
 .content{

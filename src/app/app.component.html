@@ -1,6 +1,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 <body>
   <div class="content">
 <nav class="navbar navbar-expand body-tertiary" style="background-color: black">
@@ -15,52 +16,79 @@
       </ul>
       <a routerLink="/geners/"   class="navbar-brand"><button class="btn btn-outline" >Geners</button></a>
       <a href="/trending" class="navbar-brand"><button class="btn btn-outline">trending</button></a>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 style" type="text" placeholder="Search a Movie" >
-        
-        <button class="btn btn-outline-light" type="submit" ><img src="https://cdn-icons-png.flaticon.com/512/11269/11269598.png" class="search_icon"></button>
-      </form>
+      
     </div>
   </div>
 </nav>
 
 <router-outlet ></router-outlet>
 
+
+
   </div>
 </body>
  
 
-<footer style="background-color: rgb(52,51,52);color: wheat;">
-  
+<footer style="background-color: rgb(52,51,52);color: wheat;margin-top: 2px;">
 <div class="footer">
-  <div class="container">
-    <h3 style="color: wheat;">Follow us on:</h3>
-    <div class="row pt-2">
-      <div class="col">
-        <a href="https://instagram.com/sanjay_matta36?utm_source=qr&igshid=YzU1NGVlODEzOA==" target="_blank" id="foot"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" class="icon"></a> instagram 
-      </div>
-      <div class="d-block w-100"></div>
+  <!-- <div class="container">
+          <h3 style="color: wheat;">Follow us on:</h3>
+    
+      
       <div class="row pt-2">
+        <div class="col">
+          <a href="https://instagram.com/sanjay_matta36?utm_source=qr&igshid=YzU1NGVlODEzOA==" target="_blank" id="foot"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" class="icon"></a> instagram 
+       
+        </div>
         <div class="col">
           <a href="https://www.facebook.com" target="_blank" id="foot"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" class="icon"></a> facebook
         </div>
+        <div class="col">
+          <a href="https:/web.telegram.org" target="_blank" id="foot"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968804.png" class="icon"></a> telegram
+        
+        </div>
+        <div class="col">
+           <h5>For More Details</h5>
+             Contact:+(91) XXXXXXXXXX
+            <address>
+                LPU-Jalandhar,Punjab-144411
+              </address>
+       
       </div>
     </div>
-    <div class="row pt-2">
-      <div class="col">
-         <a href="https:/web.telegram.org" target="_blank" id="foot"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968804.png" class="icon"></a> telegram
-      </div>
-    </div>
-    <div class="row pt-2">
-      <div class="col">
-        <h5>For More Details</h5>
-        Contact:+(91) XXXXXXXXXX
-        <address>
-          LPU-Jalandhar,Punjab-144411
-        </address>
-      </div>
-    </div>
-  </div>
-</div>
+  </div> -->
 
+   <div class="container">
+    <h3 style="color: wheat;display: flex;justify-content: flex-start;">Follow us on:</h3>
+         <div class="row pt-2">
+                <div class="col">
+                  <a href="https://instagram.com/sanjay_matta36?utm_source=qr&igshid=YzU1NGVlODEzOA==" target="_blank" id="foot"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" class="icon"></a> instagram 
+                </div>
+                <div class="col">
+                  <a href="https:/web.telegram.org" target="_blank" id="foot"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968804.png" class="icon"></a> telegram       
+                </div>
+                <div class="col">
+                  <a href="https://www.facebook.com" target="_blank" id="foot"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" class="icon"></a> facebook
+                </div>
+                <div class="col">
+                  
+                 
+                </div>
+         </div>
+   </div>
+   <div class="container">
+       <div class="row">
+           <div class="col">
+            
+            Contact:+(91) XXXXXXXXXX
+           <address>
+               LPU-Jalandhar,Punjab-144411
+             </address>
+      
+           </div>
+       </div>
+   </div>
+
+
+</div>
 </footer>

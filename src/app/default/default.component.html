@@ -1,0 +1,52 @@
+
+                 
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="search">
+        <input class="form-control me-2" type="text" placeholder="Search" aria-label="Search"  [(ngModel)]="searchInput">
+        <button class="btn btn-success"  (click)="search()">Search</button>
+    </div>
+    </div>
+  </nav>
+
+<div *ngIf="resultMovies.length>0 ">
+    <h5 style="color: black;display: flex;justify-content: center;">Search Result</h5>
+    <div class="head">
+       
+      <div *ngFor="let movie of resultMovies "   style="color: wheat;">
+          <div>
+               
+           <div class="container">
+               <div class="row pt-2">
+            <div class="col pt-2">
+             <div class="card" style="width: 18rem;">
+               <img [src]="movie.poster" class="card-img-top" alt="..." style="height: 200px;">
+               <div class="card-body" style="background-color: #373636; color: wheat;">
+                <h5 class="card-title" style="color: orangered;">{{movie.title}}</h5>
+                <h5 style="color: white;">Plot</h5> <p class="card-text"> {{movie.plot}}</p>
+                <a (click)="showdetails(movie.title)" class="btn btn-outline"  [routerLink]="['/details',movie.title]">View Details</a>
+               </div>
+            </div>
+          </div>
+               </div>
+      </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+           
+            <img src="https://wallpaperaccess.com/full/3658600.jpg" style="height: 75vh; width: 100%; margin-top: 10px;" >
+           
+        </div>
+    </div>
+  </div>
+  
+
+  
+
