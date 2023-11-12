@@ -1,8 +1,8 @@
 import { Component ,OnInit} from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+
 import { ActivatedRoute } from '@angular/router';
 import { SharedService } from '../shared.service';
-// implements {ActivatedRoute}
+
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',
@@ -11,11 +11,11 @@ import { SharedService } from '../shared.service';
 export class DetailsComponent implements OnInit{
   movies:any[]=[];
   movieTitle!: string | null;
-  trailerid!:string | null;
-  selectedMovie: any; // Assuming you have a data structure for movie details
+ 
+  selectedMovie: any; 
 
   
-  constructor(private route: ActivatedRoute,private movieService:SharedService,private sanitizer:DomSanitizer) {
+  constructor(private route: ActivatedRoute,private movieService:SharedService) {
     this.movies=this.movieService.movies;
   }
   

@@ -53,4 +53,6 @@ body{
   .content{
     flex: 1;
   }
-  
+  nav{
+    border-radius: 10px;
+  }
