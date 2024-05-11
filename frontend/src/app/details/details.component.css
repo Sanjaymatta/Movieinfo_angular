@@ -1,9 +1,3 @@
-.search{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40%;
-}
 .icon{
     height: 50px;
     width: auto;
@@ -31,9 +25,7 @@
    
     background-color: #373636;
 }
-.btn:hover{
-      border-color: wheat;
-}
+
 .btn{
     color: wheat;
 }
@@ -44,10 +36,10 @@
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
-    
 }
 button:hover{
    border-color: wheat;
+   color: green;
 }
 .selected-container{
     border-radius: 5px;
@@ -60,11 +52,12 @@ button:hover{
 }
 .td1{
     color: green;
-    font-family:fantasy
+    /* font-family: 'Poppins', sans-serif; */
+   
 }
 .td2{
     color: white;
-    font-family: fantasy;
+    font-family: 'Poppins', sans-serif;
 }
  .Animation{
    
@@ -79,9 +72,3 @@ button:hover{
  
  
 } 
-#nodata:hover span{
-   font-weight: bolder;
-}
-#nodata{
-    margin-left: 50%;
-}

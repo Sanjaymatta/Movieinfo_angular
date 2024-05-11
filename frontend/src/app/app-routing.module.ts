@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:"details/:title",component:DetailsComponent},
   {path:"",redirectTo:'',pathMatch:'full'},
   { path: 'genermovies/:genre', component: GenermoviesComponent },
-  { path: '', redirectTo: '/genres', pathMatch: 'full' },
+  // { path: '', redirectTo: '/genres', pathMatch: 'full' },
   {path:"",component:DefaultComponent}
 ];
 

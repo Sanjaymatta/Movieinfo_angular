@@ -1,0 +1,32 @@
+.btn:hover{
+ background-color: skyblue;
+ border-color: green;
+ font-weight: bolder;
+}
+
+.btn{
+  color: white;
+  background-color: orangered; 
+  border-color: wheat;
+  margin: 10px;
+  width: 130px; 
+  height: 40px; 
+  
+  
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  margin-left: 0;
+  align-items: center;
+  padding-top: 10px;
+   /* background-color: rgb(165,161,165); */
+
+}
+.content{
+  flex: 1;
+}
+.row {
+  padding: 20px;
+}

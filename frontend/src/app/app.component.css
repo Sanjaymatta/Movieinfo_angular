@@ -1,0 +1,58 @@
+.icon{
+    height: 50px;
+    width: auto;
+}
+.search_icon{
+    height: 15px;
+    width: auto;
+}
+
+.navbar-brand{
+    color: wheat;
+}
+
+.navbar-brand:hover{
+    color: green;
+}
+.btn btn-primary{
+    color: wheat;
+}
+.card-body{
+      border-radius: 0 0 20px 20px;
+}
+.card{
+    border-radius: 0 0 19px 19px;
+   
+    background-color: #373636;
+}
+.btn:hover{
+      border-color: wheat;
+}
+.btn{
+    color: wheat;
+}
+.Trending{
+   margin-left: 10%;
+}
+.footer{
+ position: relative; 
+   width: 20%;
+   margin: auto; 
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+   
+    min-height: 90vh;
+    margin: 0;
+      padding-top: 5px;
+     /* background-color: rgb(52, 51, 51); */
+  
+  }
+  .content{
+    flex: 1;
+  }
+  nav{
+    border-radius: 10px;
+  }

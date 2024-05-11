@@ -9,10 +9,12 @@ import { SharedService } from '../shared.service';
 })
 export class TrendingComponent {
   movies:any[]=[];
+   count=0;
          constructor(private movieService:SharedService){
-           this.movies=this.movieService.movies;
+          //  this.movies=this.movieService.movies;
+           this.movies = this.movieService.movies.filter(movie => movie.trending==true);
          }
-         
+        
   
   selectedMovie:any;
   showdetails(moviename:string){

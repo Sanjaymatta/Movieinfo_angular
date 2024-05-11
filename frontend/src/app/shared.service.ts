@@ -9,6 +9,7 @@ export class SharedService {
   this.movies=[
     {
       title:"K.G.F 1",
+      trending:false,
       year:2018,
       rating:8.2,
       trailerid:"fnGW4iQzVLw",
@@ -31,6 +32,7 @@ export class SharedService {
     },
     {
       title:"RRR",
+      trending:false,
       year:2022,
       rating:7.8,
       trailerid:"NgBoMJy386M",
@@ -51,6 +53,7 @@ export class SharedService {
     },
     {
       title:"Kantara",
+      trending:false,
       year:2022,
       rating:8.2,
       trailerid:"3L5X46j2t90",
@@ -72,6 +75,7 @@ export class SharedService {
     },
     {
       title:"The Family Man",
+      trending:true,
       year:2019+"-",
       rating:7.4,
       trailerid:"NGf_B81Hc2M",
